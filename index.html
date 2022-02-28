@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arca.live</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="header">
+        <div id="left_header">
+            <img src="./img/logo.PNG" alt="">
+            <p onclick="alert('구독중인 채널이 없습니다');return false;">
+                구독 채널
+            </p>
+            <div class="left_header_dropdown">
+                <button onclick="dp_menu()" id="left_header_drop">주요 채널</button>
+                <div id="left_header_drop-content">
+                    <div class="left_header_drop_text">
+                        <a href="">베스트 라이브</a>
+                        <a href="">유머 채널</a>
+                        <a href="">개념글 모음</a>
+                        <a href="">종합 심의대상</a>
+                        <a href="">종합 속보</a>
+                    </div>
+                    <div class="left_header_drop_text">
+                        <a href="">공지 사항</a>
+                        <a href="">문의 게시판</a>
+                        <a href="">채널 문의 게시판</a>
+                    </div>
+                    <div class="left_header_drop_text">
+                        <a href="">프롬 소프트웨어 채널</a>
+                        <a href="">원신 채널</a>
+                        <a href="">로스트아크 채널</a>
+                        <a href="">유희왕 채널</a>
+                        <a href="">에픽세븐 채널</a>
+                        <a href="">카운터사이드 채널</a>
+                        <a href="">던전앤파이터 채널</a>
+                        <a href="">라스트오리진 채널</a>
+                        <a href="">소울워커 채널</a>
+                        <a href="">블루 아카이브 채널</a>
+                        <a href="">가이진 채널</a>
+                        <a href="">명일방주 채널</a>
+                        <a href="">격투게임 채널</a>
+                        <a href="">에어소프트 채널</a>
+                        <a href="">붕괴3rd 채널</a>
+                        <a href="">랑스릿사 채널</a>
+                        <a href="">벽람항로 채널</a>
+                        <a href="">홀로라이브 채널</a>
+                        <a href="">이터널 리턴 채널</a>
+                        <a href="">프린세스 커넥트 Re:Dive 채널</a>
+                        <a href="">레플리카 채널</a>
+                        <a href="">걸 카페 건 채널</a>
+                        <a href="">커미션 채널</a>
+                    </div>
+                </div>
+            </div>
+            <p id="left_header_p">
+                채널 검색
+            </p>
+        </div>
+        <div id="right_header">
+            <input type="search" value="" placeholder="찾기" id="right_header_search">
+            <a href="https://namu.news/section/news#gsc.tab=0" id="right_header_news">뉴스</a>
+            <a href="https://namu.wiki/w/%EB%82%98%EB%AC%B4%EC%9C%84%ED%82%A4:%EB%8C%80%EB%AC%B8" id="right_header_news_wiki">위키</a>
+            <img src="./img/user.PNG" alt="">
+        </div>
+    </div>
+    <div id="mid">
+        <div id="left_mid">
+            <div id="title">
+                <div id="left_title">
+                    <img src="./img/page.PNG" alt="">
+                    <p>컴퓨터공학 채널</p>
+                    <hr>
+                    <p>구독자 2385명</p>
+                    <hr>
+                    <p>@Singleton</p>
+                </div>
+                <div id="right_title">
+                    <input type="button" id="subscribe" value="+ 구독">
+                </div>
+            </div>
+            <div id="button">
+                <div id="left_button">
+                    <input type="button" value="전체글">
+                    <input type="button" value="개념글">
+                    <input type="button" value="등록순">
+                    <input type="button" value="추천컷">
+                </div>
+                <div id="right_button">
+                    <input type="button" value="글쓰기">
+                </div>
+            </div>
+            <div id="ad">
+                <img src="./img/ad.PNG" alt="">
+            </div>
+            <div id="recent_visits">
+                <div id="left_visits">
+                    <p>최근 방문</p>
+                    <a href="">유머 X</a>
+                    <a href="">다시보기 X</a>
+                </div>
+                <div id="right_visits">
+                    <img src="./img/3bar.PNG" alt="">
+                </div>
+            </div>
+            <div id="main">
+                <div id="top_main">
+                    <p>번호</p>
+                    <p>제목</p>
+                    <p>작성자</p>
+                    <p>작성일</p>
+                    <p>조회수</p>
+                    <p>추천</p>
+                </div>
+                <div class="gray_main">
+                    <p>공지</p>
+                    <p>채널 주소 변경 이벤트 사전 접수 안내</p>
+                    <p>*ㅎㅎ</p>
+                    <p>2022.02.11</p>
+                    <p>272485</p>
+                </div>
+                <div class="gray_main">
+                    <p>공지</p>
+                    <p>아카라이브 모바일 앱 이용 안내(iOs/Android)</p>
+                    <p>*ㅎㅎ</p>
+                    <p>2022.08.18</p>
+                    <p>10229...</p>
+                </div>
+                <div class="gray_main">
+                    <p>공지</p>
+                    <p>컴퓨터공학 채널 규칙</p>
+                    <p>허언채팅</p>
+                    <p>2022.08.06</p>
+                    <p>2450</p>
+                </div>
+                <div id="bottom_gray_main">
+                    <p>숨겨진 공지 펼치기(1개)</p>
+                </div>
+                <div class="wight_main">
+                    <p>3635</p>
+                    <p>질문</p>
+                    <p>Sata 포드 부족</p>
+                    <p>dnghkd</p>
+                    <p>21:08</p>
+                    <p>5</p>
+                    <p>0</p>
+                </div>
+                <div class="wight_main">
+                    <p>3635</p>
+                    <p>질문</p>
+                    <p>Sata 포드 부족</p>
+                    <p>dnghkd</p>
+                    <p>21:08</p>
+                    <p>5</p>
+                    <p>0</p>
+                </div>
+                <div class="wight_main">
+                    <p>3635</p>
+                    <p>질문</p>
+                    <p>Sata 포드 부족</p>
+                    <p>dnghkd</p>
+                    <p>21:08</p>
+                    <p>5</p>
+                    <p>0</p>
+                </div>
+                <div class="wight_main">
+                    <p>3635</p>
+                    <p>질문</p>
+                    <p>Sata 포드 부족</p>
+                    <p>dnghkd</p>
+                    <p>21:08</p>
+                    <p>5</p>
+                    <p>0</p>
+                </div>
+                <div class="wight_main">
+                    <p>3635</p>
+                    <p>질문</p>
+                    <p>Sata 포드 부족</p>
+                    <p>dnghkd</p>
+                    <p>21:08</p>
+                    <p>5</p>
+                    <p>0</p>
+                </div>
+                <div class="wight_main">
+                    <p>3635</p>
+                    <p>질문</p>
+                    <p>Sata 포드 부족</p>
+                    <p>dnghkd</p>
+                    <p>21:08</p>
+                    <p>5</p>
+                    <p>0</p>
+                </div>
+                <div class="wight_main">
+                    <p>3635</p>
+                    <p>질문</p>
+                    <p>Sata 포드 부족</p>
+                    <p>dnghkd</p>
+                    <p>21:08</p>
+                    <p>5</p>
+                    <p>0</p>
+                </div>
+                <div class="wight_main">
+                    <p>3635</p>
+                    <p>질문</p>
+                    <p>Sata 포드 부족</p>
+                    <p>dnghkd</p>
+                    <p>21:08</p>
+                    <p>5</p>
+                    <p>0</p>
+                </div>
+                <div class="wight_main">
+                    <p>3635</p>
+                    <p>질문</p>
+                    <p>Sata 포드 부족</p>
+                    <p>dnghkd</p>
+                    <p>21:08</p>
+                    <p>5</p>
+                    <p>0</p>
+                </div>
+                <div class="wight_main">
+                    <p>3635</p>
+                    <p>질문</p>
+                    <p>Sata 포드 부족</p>
+                    <p>dnghkd</p>
+                    <p>21:08</p>
+                    <p>5</p>
+                    <p>0</p>
+                </div>
+                <div class="wight_main">
+                    <p>3635</p>
+                    <p>질문</p>
+                    <p>Sata 포드 부족</p>
+                    <p>dnghkd</p>
+                    <p>21:08</p>
+                    <p>5</p>
+                    <p>0</p>
+                </div>
+                <div class="wight_main">
+                    <p>3635</p>
+                    <p>질문</p>
+                    <p>Sata 포드 부족</p>
+                    <p>dnghkd</p>
+                    <p>21:08</p>
+                    <p>5</p>
+                    <p>0</p>
+                </div>
+                <div class="wight_main">
+                    <p>3635</p>
+                    <p>질문</p>
+                    <p>Sata 포드 부족</p>
+                    <p>dnghkd</p>
+                    <p>21:08</p>
+                    <p>5</p>
+                    <p>0</p>
+                </div>
+                <div class="wight_main">
+                    <p>3635</p>
+                    <p>질문</p>
+                    <p>Sata 포드 부족</p>
+                    <p>dnghkd</p>
+                    <p>21:08</p>
+                    <p>5</p>
+                    <p>0</p>
+                </div>
+                <div class="wight_main">
+                    <p>3635</p>
+                    <p>질문</p>
+                    <p>Sata 포드 부족</p>
+                    <p>dnghkd</p>
+                    <p>21:08</p>
+                    <p>5</p>
+                    <p>0</p>
+                </div>
+                <div class="wight_main">
+                    <p>3635</p>
+                    <p>질문</p>
+                    <p>Sata 포드 부족</p>
+                    <p>dnghkd</p>
+                    <p>21:08</p>
+                    <p>5</p>
+                    <p>0</p>
+                </div>
+                <div class="wight_main">
+                    <p>3635</p>
+                    <p>질문</p>
+                    <p>Sata 포드 부족</p>
+                    <p>dnghkd</p>
+                    <p>21:08</p>
+                    <p>5</p>
+                    <p>0</p>
+                </div>
+                <div class="wight_main">
+                    <p>3635</p>
+                    <p>질문</p>
+                    <p>Sata 포드 부족</p>
+                    <p>dnghkd</p>
+                    <p>21:08</p>
+                    <p>5</p>
+                    <p>0</p>
+                </div>
+                <div class="wight_main">
+                    <p>3635</p>
+                    <p>질문</p>
+                    <p>Sata 포드 부족</p>
+                    <p>dnghkd</p>
+                    <p>21:08</p>
+                    <p>5</p>
+                    <p>0</p>
+                </div>
+                <div class="wight_main">
+                    <p>3635</p>
+                    <p>질문</p>
+                    <p>Sata 포드 부족</p>
+                    <p>dnghkd</p>
+                    <p>21:08</p>
+                    <p>5</p>
+                    <p>0</p>
+                </div>
+                <div class="wight_main">
+                    <p>3635</p>
+                    <p>질문</p>
+                    <p>Sata 포드 부족</p>
+                    <p>dnghkd</p>
+                    <p>21:08</p>
+                    <p>5</p>
+                    <p>0</p>
+                </div>
+                <div class="wight_main">
+                    <p>3635</p>
+                    <p>질문</p>
+                    <p>Sata 포드 부족</p>
+                    <p>dnghkd</p>
+                    <p>21:08</p>
+                    <p>5</p>
+                    <p>0</p>
+                </div>
+                <div class="wight_main">
+                    <p>3635</p>
+                    <p>질문</p>
+                    <p>Sata 포드 부족</p>
+                    <p>dnghkd</p>
+                    <p>21:08</p>
+                    <p>5</p>
+                    <p>0</p>
+                </div>
+                <div class="wight_main">
+                    <p>3635</p>
+                    <p>질문</p>
+                    <p>Sata 포드 부족</p>
+                    <p>dnghkd</p>
+                    <p>21:08</p>
+                    <p>5</p>
+                    <p>0</p>
+                </div>
+                <div class="wight_main">
+                    <p>3635</p>
+                    <p>질문</p>
+                    <p>Sata 포드 부족</p>
+                    <p>dnghkd</p>
+                    <p>21:08</p>
+                    <p>5</p>
+                    <p>0</p>
+                </div>
+                <div class="wight_main">
+                    <p>3635</p>
+                    <p>질문</p>
+                    <p>Sata 포드 부족</p>
+                    <p>dnghkd</p>
+                    <p>21:08</p>
+                    <p>5</p>
+                    <p>0</p>
+                </div>
+                <div class="wight_main">
+                    <p>3635</p>
+                    <p>질문</p>
+                    <p>Sata 포드 부족</p>
+                    <p>dnghkd</p>
+                    <p>21:08</p>
+                    <p>5</p>
+                    <p>0</p>
+                </div>
+                <div class="wight_main">
+                    <p>3635</p>
+                    <p>질문</p>
+                    <p>Sata 포드 부족</p>
+                    <p>dnghkd</p>
+                    <p>21:08</p>
+                    <p>5</p>
+                    <p>0</p>
+                </div>
+                <div class="wight_main">
+                    <p>3635</p>
+                    <p>질문</p>
+                    <p>Sata 포드 부족</p>
+                    <p>dnghkd</p>
+                    <p>21:08</p>
+                    <p>5</p>
+                    <p>0</p>
+                </div>
+                <div class="wight_main">
+                    <p>3635</p>
+                    <p>질문</p>
+                    <p>Sata 포드 부족</p>
+                    <p>dnghkd</p>
+                    <p>21:08</p>
+                    <p>5</p>
+                    <p>0</p>
+                </div>
+                <div class="wight_main">
+                    <p>3635</p>
+                    <p>질문</p>
+                    <p>Sata 포드 부족</p>
+                    <p>dnghkd</p>
+                    <p>21:08</p>
+                    <p>5</p>
+                    <p>0</p>
+                </div>
+                <div class="wight_main">
+                    <p>3635</p>
+                    <p>질문</p>
+                    <p>Sata 포드 부족</p>
+                    <p>dnghkd</p>
+                    <p>21:08</p>
+                    <p>5</p>
+                    <p>0</p>
+                </div>
+                <div class="wight_main">
+                    <p>3635</p>
+                    <p>질문</p>
+                    <p>Sata 포드 부족</p>
+                    <p>dnghkd</p>
+                    <p>21:08</p>
+                    <p>5</p>
+                    <p>0</p>
+                </div>
+            </div>
+            <div id="button">
+                <div id="left_button">
+                    <input type="button" value="전체글">
+                    <input type="button" value="개념글">
+                    <input type="button" value="등록순">
+                    <input type="button" value="추천컷">
+                </div>
+                <div id="right_button">
+                    <input type="button" value="글쓰기">
+                </div>
+            </div>
+            <div id="all_serch">
+                <input type="button" value="전체">
+                <input type="search">
+                <input type="button" value="검색">
+            </div>
+            <div id="page_2">
+                <p>1</p>
+                <p>2</p>
+                <p>3</p>
+                <p>4</p>
+                <p>5</p>
+                <p>6</p>
+                <p>7</p>
+                <p>8</p>
+                <p>9</p>
+                <p>10</p>
+            </div>
+            <div id="month">
+                <input type="month">
+                <input type="button" value="시간으로 바로가기">
+            </div>
+        </div>
+        <div id="right_mid">
+            <div class="right_mid-1" >
+                <p>
+                    유머 채널
+                </p>
+                <div class="right_mid-2">
+                    <p>블루투스 총알</p>
+                    <p class="mark">02-23 22:36</p>
+                </div>
+                <div class="right_mid-2">
+                    <p>현실과 SNS.jpg</p>
+                    <p class="mark">02-23 20:39</p>
+                </div>
+                <div class="right_mid-2">
+                    <p>붕어 싸만코 제조과정</p>
+                    <p class="mark">02-21 12:03</p>
+                </div>
+                <div class="right_mid-2">
+                    <p>] 올림픽 중계로 혼자 살던...</p>
+                    <p class="mark">02-22 10:37</p>
+                </div>
+                <div class="right_mid-2">
+                    <p>재앙이 일어나기전 찍힌 마지막 ...</p>
+                    <p class="mark">02-22 09:55</p>
+                </div>
+            </div>
+            <div class="right_mid-1" >
+                <p>
+                    이 채널의 개념글
+                </p>
+                <div class="right_mid-2">
+                    <p>파이썬 루프문</p>
+                    <p class="mark">01-27 14:48</p>
+                </div>
+                <div class="right_mid-2">
+                    <p>올해 컴과 합격한 신입생 인...</p>
+                    <p class="mark">01-23 05:36</p>
+                </div>
+                <div class="right_mid-2">
+                    <p>저 속이 이상해요...js</p>
+                    <p class="mark">03-13 20:09</p>
+                </div>
+                <div class="right_mid-2">
+                    <p>갓겜을 만든 천재프로그래머</p>
+                    <p class="mark">01-07 21:23</p>
+                </div>
+                <div class="right_mid-2">
+                    <p>그림으로 보는 TCP UDP 차이</p>
+                    <p class="mark">01-08 19:13</p>
+                </div>
+            </div>
+            <img src="./img/ad-2.PNG" alt="">
+            <div class="right_mid-1" >
+                <p>
+                    나무뉴스 주요
+                </p>
+                <p>
+                    이재명, 조원진에도 정책연대 제안…"정치개... 
+                    <br>
+                    태국 입국 때 없던 코카인 봉지 74개가 어디서…
+                    <br>
+                    마트 男직원과 수상한 눈빛?...'내조여왕' 아내의... 
+                    <br>
+                    '78세' 오경아 "韓 최초 비키니 모델…시기... 
+                    <br>
+                    "연수익 400%" BTS⋅뽀로로 내세워 노인·주...
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="bottom">
+        <div id="bottom_up">
+            <p>Live v2 (5fb5d5f7)</p>
+            <hr>
+            <span class="blue">Contáctenos</span>
+            <hr>
+            <span class="blue">POLÍTICA DE PRIVACIDAD Y REGLAS DE USO</span>
+        </div>
+        <div id="bottom_up">
+            <p>Operado por umanle S.R.L.</p>
+            <hr>
+            <p>Hecho con <3 en Asunción, República del Paraguay</p>
+        </div>
+        <p>33563명</p>
+    </div>
+    <script>
+        function dp_menu(){
+            let click = document.getElementById("left_header_drop-content");
+            if(click.style.display === "none"){
+                click.style.display = "block";
+            }else{
+                click.style.display = "none";
+ 
+            }
+        }
+    </script>
+</body>
+</html>
