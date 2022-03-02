@@ -4,8 +4,13 @@
 }
 body {
     background-color: rgb(221, 221, 221);
+    margin: auto;
+    width: 100%;
 }
-
+html {
+    margin: auto;
+    width: 100%;
+}
 /* 상위 태그 */
 
 #header {
@@ -99,13 +104,14 @@ body {
 
 #mid {
     width: 1350px;
+    height: 100vmax;
     margin: auto;
     display: flex;
     flex-direction: row;
 }
 #left_mid {
     width: 960px;
-    height: 1700px;
+    height: 96vmax;
     border: solid 1px lightgray;
     background-color: white;
     padding: 20px;
@@ -549,4 +555,22 @@ body {
 #month input:last-child:hover {
     cursor: pointer;
     background-color: lightgray;
+}
+@media screen and (min-width:0px) and (max-width:448px){
+    html {
+        width: 1800px;
+        height: 1930px;
+    }  
+    body {
+        width: 1800px;
+        height: 1800px;
+    }
+    #mid {
+        width: 1350px;
+        height: 1800px;
+    }
+    #left_mid {
+        width: 960px;
+        height: 1750px;
+    }
 }
